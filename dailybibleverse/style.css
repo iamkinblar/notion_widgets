@@ -73,8 +73,7 @@
 .widget {
     position: relative;
     text-align: center
-    resize: both;
-    overflow: hidden;
+    
 }
 
 /* The texts */
@@ -133,6 +132,8 @@
     font-size: 25px;
     color: #dff5ff;
     cursor: pointer;
+    resize: both;
+    overflow: hidden;
   }
 
 
