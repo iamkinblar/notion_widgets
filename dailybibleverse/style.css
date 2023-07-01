@@ -72,7 +72,9 @@
 /* The image and text */
 .widget {
     position: relative;
-    text-align: center;
+    text-align: center
+    resize: both;
+    overflow: hidden;
 }
 
 /* The texts */
