@@ -67,9 +67,6 @@
     width: 70%; /* Adjust the width as needed */
     max-width: 100%;
     position: relative;
-}
-
-#center img {
     width: 100%;
     height: auto;
     object-fit: contain;
