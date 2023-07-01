@@ -58,21 +58,11 @@
     -webkit-text-stroke: 0.2px #808080;
 }
 
-
-/* To center the image */
-#center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    max-width: 100%;
-    height: auto; 
-}
-
 /* The image and text */
 .widget {
     position: relative;
     text-align: center;
+    background-image: url(homepage 5 (2).png);
 }
 
 /* The texts */
