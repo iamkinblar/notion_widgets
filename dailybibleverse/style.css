@@ -133,5 +133,27 @@
     cursor: pointer;
   }
 
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .widget {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow the container to grow with the content */
+  }
+
+  .title,
+  .verse-text,
+  .verse-reference {
+    position: static; /* Remove absolute positioning */
+    text-align: center; /* Center the text */
+    margin: 10px; /* Add some spacing between elements */
+  }
+
+  .refreshbtn {
+    position: static; /* Remove absolute positioning */
+    margin: 20px auto; /* Center the button */
+  }
+}
+
   
   
