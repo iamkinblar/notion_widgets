@@ -69,6 +69,10 @@
     height: auto; 
 }
 
+img {
+   object-fit: cover;
+}
+
 /* The image and text */
 .widget {
     position: relative;
