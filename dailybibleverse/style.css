@@ -66,20 +66,14 @@
     margin-right: auto;
     width: 70%; /* Adjust the width as needed */
     max-width: 100%;
-    height: 0;
-    padding-bottom: 70%; /* Adjust the padding-bottom to match the desired aspect ratio */
     position: relative;
 }
 
 #center img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
-
 
 /* The image and text */
 .widget {
