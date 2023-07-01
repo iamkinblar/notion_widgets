@@ -61,10 +61,8 @@
 
 /* To center the image */
 #center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    display: grid;
+    place-items: center;
     height: 100vh; 
 }
 
