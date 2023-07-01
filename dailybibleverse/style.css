@@ -122,6 +122,8 @@
     font-family: 'CopperplateGothicBRFont', sans-serif;
     font-size: 2vw;
     text-align: center;
+    resize: both;
+    overflow: auto;
 }
 
 .verse-reference {
