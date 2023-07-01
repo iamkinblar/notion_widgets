@@ -67,12 +67,14 @@
     width: 100%;
     max-width: 100%;
     height: auto; 
+    object-fit: cover;
 }
 
 /* The image and text */
 .widget {
     position: relative;
     text-align: center
+    object-fit: cover;
     
 }
 
@@ -98,6 +100,7 @@
     font-family: 'CopperplateGothicBRFont', sans-serif;
     font-size: 2vw;
     text-align: center;
+    object-fit cover;
 }
 
 .verse-reference {
@@ -132,8 +135,7 @@
     font-size: 25px;
     color: #dff5ff;
     cursor: pointer;
-    resize: both;
-    overflow: hidden;
+    
   }
 
 
