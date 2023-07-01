@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The fonts */
+@font-face {
+    font-family: 'BuffaloFont';
+    src: url("fonts/Buffalo.otf") format("opentype");
+}
+@font-face {
+    font-family: 'LotuseaterFont';
+    src: url("fonts/Lotuseater-d9A46.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CopperplateGothicBRFont';
+    src: url("fonts/Copperplate Gothic Bold Regular.ttf") format("truetype")
+}
+@font-face {
+    font-family: 'GagalinFont';
+    src: url("fonts/Gagalin-Regular.otf") format("opentype"); 
+}
+@font-face {
+    font-family: 'AlegreyaSansFont';
+    src: url("fonts/AlegreyaSans-ExtraBold.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: 'MontserratFont';
+    src: url("fonts/MontserratAlternates-SemiBold.otf") format("opentype"); 
+}
+
+/* The text effects */
+.neon {
+    color: #fff;
+    animation: neon 1s linear infinite alternate;
+}
+@keyframes neon {
+    from {
+        text-shadow: 
+           0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 20px #D5D0D4,
+           0 0 25px #D5D0D4;
+    }
+    to {
+        text-shadow: 
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 20px #D5D0D4,
+          0 0 25px #D5D0D4,
+          0 0 25px #D5D0D4;
+
+    }
+}
+
+.outline {
+    -webkit-text-stroke: 0.2px #808080;
+}
+
+
+/* To center the image */
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto; 
+}
+
+/* The image and text */
+.widget {
+    position: relative;
+    text-align: center;
+}
+
+/* The texts */
+.title {
+    position: absolute;
+    top: 14%;
+    left: 46.6%;
+    transform: translate(-50%, -50%);
+    font-family: 'BuffaloFont', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verse-text {
+    position: absolute;
+    top: 21%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    max-height: 5%;
+    font-family: 'CopperplateGothicBRFont', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.verse-reference {
+    position: absolute;
+    top: 55.5%;
+    left: 46.8%;
+    transform: translate(-50%, -50%);
+    font-family: 'GagalinFont', sans-serif;
+    font-size: larger;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.refreshbtn {
+    position: absolute;
+/* how to center the text into the container/border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/* positioning */
+    top: 73.6%;
+    left: 49.3%;
+    transform: translate(-50%, -50%);
+/* how to make the cirle shape */
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #434243;
+    border: 0.02px dotted #ffffff;
+    font-family: 'AlegreyaSansFont', sans-serif;
+    font-size: 25px;
+    color: #dff5ff;
+    cursor: pointer;
+  }
+
+  
+  
