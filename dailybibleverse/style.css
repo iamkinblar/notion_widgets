@@ -64,44 +64,40 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%; /* Adjust the width as needed */
+    width: 50%;
     max-width: 100%;
-    position: relative;
-    width: 100%;
+    height: auto; 
     object-fit: cover;
 }
-
 
 /* The image and text */
 .widget {
     position: relative;
-    text-align: center
-    
+    text-align: center;
 }
 
 /* The texts */
 .title {
-    position: relative;
+    position: absolute;
     top: 14%;
     left: 46.6%;
     transform: translate(-50%, -50%);
     font-family: 'BuffaloFont', sans-serif;
-    font-size: 4vw;
+    font-size: 40px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .verse-text {
-    position: relative;
+    position: absolute;
     top: 21%;
     left: 46.5%;
     transform: translate(-50%, -50%);
     width: 20%;
     max-height: 5%;
     font-family: 'CopperplateGothicBRFont', sans-serif;
-    font-size: 2vw;
-    text-align: center;
-    object-fit: cover;
+    font-size: 24px;
+    text-align: center; 
 }
 
 .verse-reference {
@@ -110,13 +106,13 @@
     left: 46.8%;
     transform: translate(-50%, -50%);
     font-family: 'GagalinFont', sans-serif;
-    font-size: 2.5vw;
+    font-size: larger;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .refreshbtn {
-    position: relative;
+    position: absolute;
 /* how to center the text into the container/border */
     display: flex;
     align-items: center;
@@ -137,8 +133,6 @@
     color: #dff5ff;
     cursor: pointer;
   }
-
-
 
   
   
