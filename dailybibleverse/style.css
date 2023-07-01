@@ -68,8 +68,7 @@
     max-width: 100%;
     position: relative;
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
