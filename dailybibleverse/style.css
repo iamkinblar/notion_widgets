@@ -61,11 +61,6 @@
 /* The widget container */
 .widget {
     text-align: center;
-    background-image: url("homepage 5 (2).png"); 
-    background-size: auto; /* Adjust the background size to cover the container */
-    background-position: center; /* Set the background position to the center */
-    width: 100%; /* Increase the width of the image */
-    height: auto;
 }
 
 
