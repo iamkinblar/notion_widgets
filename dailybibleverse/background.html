@@ -56,9 +56,9 @@ document.querySelector(".refreshbtn").addEventListener("click", function() {
        height: auto; /* Maintain the aspect ratio */
      }
 
-     #image-container p {
+     .verse {
        position: absolute;
-       top: 20%;
+       top: 22%;
        left: 23.5%;
        width: 40%;
        text-align: center;
@@ -66,12 +66,25 @@ document.querySelector(".refreshbtn").addEventListener("click", function() {
        font-size: 4vh;
        font-family: 'CopperplateGothicBRFont', sans-serif;
      }
+
+     .reference {
+       position: absolute;
+       top: 45%;
+       left: 34%;
+       text-align: center;
+
+       font-size: 2.5vh;
+       font-family: 'GagalinFont', sans-serif;
+       color: #ffffff;
+       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     }
    </style>
   </head>
   <body>
     <div id="image-container">
       <img src="homepage 7 (1).png" alt="Background Image">
       <p id="verse" class="neon">loading...</p>
+      <p id="reference">loading..</p>
     </div>
   </body>
 </html>
