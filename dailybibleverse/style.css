@@ -61,6 +61,10 @@
 /* The image and text */
 .widget {
     text-align: center;
+    background-image: url("background.html"); /* Replace "path/to/your/image.jpg" with the actual path to your image */
+    background-size: cover; /* Adjust the background size to cover the container */
+    background-position: center; /* Set the background position to the center */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 /* The texts */
