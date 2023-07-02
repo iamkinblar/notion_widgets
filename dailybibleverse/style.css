@@ -58,10 +58,15 @@
     -webkit-text-stroke: 0.2px #808080;
 }
 
-/* The image and text */
+/* The widget container */
 .widget {
     text-align: center;
+    background-image: url("homepage 5 (2).png"); 
+    background-size: cover; /* Adjust the background size to cover the container */
+    background-position: center; /* Set the background position to the center */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
+
 
 /* The texts */
 .title {
