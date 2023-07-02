@@ -5,20 +5,33 @@
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script>
      //  to fetch a random Bible verse
-     function getVerse() {
-           fetch("https://labs.bible.org/api/?passage=random&type=json")
-           .then(response => response.json())
-           .then(data => {
-              const verseText = data[0].text;
-              const verseReference = `${data[0].bookname} ${data[0].chapter}:${data[0].verse}`;
+    function getVerse() {
+      fetch("https://labs.bible.org/api/?passage=random&type=json")
+      .then(response => response.json())
+      .then(data => {
+         const verseText = data[0].text;
+         const verseReference = `${data[0].bookname} ${data[0].chapter}:${data[0].verse}`;
 
-              document.querySelector("#verse").innerHTML = verseText;
-              document.querySelector("#reference").innerHTML = verseReference;
+         // Check word count of verseText
+         const wordCount = verseText.split(" ").length;
+         if (wordCount > 15) {
+        // Skip the verse and get another verse
+            getVerse();
+            return;
+      }
+
+      document.querySelector("#verse").innerHTML = verseText;
+      document.querySelector("#reference").innerHTML = verseReference;
     })
-    .catch(error => {
-       console.log("Error:", error);
+      .catch(error => {
+         console.log("Error:", error);
     });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  getVerse();
+});
+
 
      document.addEventListener("DOMContentLoaded", function() {
        getVerse();
