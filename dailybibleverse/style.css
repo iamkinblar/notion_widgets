@@ -61,35 +61,30 @@
 /* The image and text */
 .widget {
     text-align: center;
-    background-image: url("background.html"); /* Replace "path/to/your/image.jpg" with the actual path to your image */
-    background-size: cover; /* Adjust the background size to cover the container */
-    background-position: center; /* Set the background position to the center */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 /* The texts */
 .title {
     font-family: 'BuffaloFont', sans-serif;
-    font-size: 40px;
+    font-size: 4vw; /* Use viewport width unit to make the font size responsive */
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .verse-text {
     font-family: 'CopperplateGothicBRFont', sans-serif;
-    font-size: 24px;
+    font-size: 2vw; /* Use viewport width unit to make the font size responsive */
     text-align: center;
 }
 
 .verse-reference {
     font-family: 'GagalinFont', sans-serif;
-    font-size: larger;
+    font-size: 1.5vw; /* Use viewport width unit to make the font size responsive */
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .refreshbtn {
-    position: absolute;
 /* how to center the text into the container/border */
     display: flex;
     align-items: center;
@@ -103,7 +98,7 @@
     background: #434243;
     border: 0.02px dotted #ffffff;
     font-family: 'AlegreyaSansFont', sans-serif;
-    font-size: 25px;
+    font-size: 2vw; /* Use viewport width unit to make the font size responsive */
     color: #dff5ff;
     cursor: pointer;
   }
