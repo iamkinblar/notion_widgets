@@ -62,7 +62,7 @@
 .widget {
     text-align: center;
     background-image: url("homepage 5 (2).png"); 
-    background-size: cover; /* Adjust the background size to cover the container */
+    background-size: contain; /* Adjust the background size to cover the container */
     background-position: center; /* Set the background position to the center */
 }
 
