@@ -18,7 +18,7 @@
         getVerse();
         return;
       }
-      if (wordCount > 15) {
+      if (wordCount > 12) {
         // Reduce the font size of #verse when word count exceeds 15
         document.querySelector("#verse").style.fontSize = "2.5vh";
       } else {
@@ -71,7 +71,6 @@ document.querySelector(".refreshbtn").addEventListener("click", function() {
        position: absolute;
        top: 57%;
        left: 25%;
-       width: 60%;
        text-align: center;
 
        font-size: 3.5vh;
