@@ -54,7 +54,10 @@
 
 /* The container */
 .widget {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to the viewport height */
 }
 
 
