@@ -9,32 +9,27 @@
       fetch("https://labs.bible.org/api/?passage=random&type=json")
       .then(response => response.json())
       .then(data => {
-         const verseText = data[0].text;
-         const verseReference = `${data[0].bookname} ${data[0].chapter}:${data[0].verse}`;
+        const verseText = data[0].text;
+        const verseReference = `${data[0].bookname} ${data[0].chapter}:${data[0].verse}`;
 
-         // Check word count of verseText
-         const wordCount = verseText.split(" ").length;
-         if (wordCount > 13) {
-        // Skip the verse and get another verse
-            getVerse();
-            return;
+      const wordCount = verseText.split(" ").length;
+      if (wordCount > 15) {
+        // Reduce the font size of #verse when word count exceeds 15
+        document.querySelector("#verse").style.fontSize = "2.5vh";
+      } else {
+        // Restore the default font size of #verse
+        document.querySelector("#verse").style.fontSize = "4vh";
       }
 
       document.querySelector("#verse").innerHTML = verseText;
       document.querySelector("#reference").innerHTML = verseReference;
     })
-      .catch(error => {
-         console.log("Error:", error);
+    .catch(error => {
+      console.log("Error:", error);
     });
 }
-
 document.addEventListener("DOMContentLoaded", function() {
   getVerse();
-});
-
-
-     document.addEventListener("DOMContentLoaded", function() {
-       getVerse();
 });
 
 // Add a click event listener to the refresh button
@@ -69,7 +64,7 @@ document.querySelector(".refreshbtn").addEventListener("click", function() {
 
      #reference {
        position: absolute;
-       top: 65%;
+       top: 45%;
        left: 23.5%;
        text-align: center;
 
