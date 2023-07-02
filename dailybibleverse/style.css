@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* The fonts */
 @font-face {
     font-family: 'BuffaloFont';
@@ -58,7 +52,7 @@
     -webkit-text-stroke: 0.2px #808080;
 }
 
-/* The widget container */
+/* The container */
 .widget {
     text-align: center;
 }
