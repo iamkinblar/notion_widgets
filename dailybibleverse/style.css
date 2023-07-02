@@ -64,7 +64,6 @@
     background-image: url("homepage 5 (2).png"); 
     background-size: cover; /* Adjust the background size to cover the container */
     background-position: center; /* Set the background position to the center */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 
