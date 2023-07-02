@@ -3,6 +3,32 @@
    <title>Background</title>
    <link rel="stylesheet" href="style.css">
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+     //  to fetch a random Bible verse
+     function getVerse() {
+           fetch("https://labs.bible.org/api/?passage=random&type=json")
+           .then(response => response.json())
+           .then(data => {
+              const verseText = data[0].text;
+              const verseReference = `${data[0].bookname} ${data[0].chapter}:${data[0].verse}`;
+
+              document.querySelector("#verse").innerHTML = verseText;
+              document.querySelector("#reference").innerHTML = verseReference;
+    })
+    .catch(error => {
+       console.log("Error:", error);
+    });
+}
+
+     document.addEventListener("DOMContentLoaded", function() {
+       getVerse();
+});
+
+// Add a click event listener to the refresh button
+document.querySelector(".refreshbtn").addEventListener("click", function() {
+  getVerse();
+});
+   </script>
    <style>
      .image-container {
        display: flex;
@@ -21,14 +47,16 @@
        position: absolute;
        top: 18%;
        left: 25.5%;
+       
        font-size: 4vh;
+       font-family: 'CopperplateGothicBRFont', sans-serif;
      }
    </style>
   </head>
   <body>
     <div class="image-container">
       <img src="homepage 5 (2).png" alt="Background Image">
-      <p id="verse">hello.</p>
+      <p id="verse">loading...</p>
     </div>
   </body>
 </html>
