@@ -31,7 +31,68 @@
                 });
             }
           })();
-    </script>    
+    </script> 
+    <style> 
+        /* The container */
+.widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to the viewport height */
+}
+
+.widget img {
+       position: relative;
+       width: 100%; /* Increase the width of the image */
+       height: auto; /* Maintain the aspect ratio */
+     }
+
+
+/* The texts 
+.title {
+    font-family: 'BuffaloFont', sans-serif;
+    font-size: 4vw; /* Use viewport width unit to make the font size responsive */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+.verse-text {
+    position: absolute;
+    top: 18%;
+    left: 25.5%;
+    font-family: 'CopperplateGothicBRFont', sans-serif;
+    font-size: 4vh; /* Use viewport width unit to make the font size responsive */
+    text-align: center;
+}
+
+.verse-reference {
+    position: absolute;
+    font-family: 'GagalinFont', sans-serif;
+    font-size: 2vh; /* Use viewport width unit to make the font size responsive */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.refreshbtn {
+/* how to center the text into the container/border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/* positioning */
+    position: absolute;
+/* how to make the cirle shape */
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #434243;
+    border: 0.02px dotted #ffffff;
+    font-family: 'AlegreyaSansFont', sans-serif;
+    font-size: 2vw; /* Use viewport width unit to make the font size responsive */
+    color: #dff5ff;
+    cursor: pointer;
+  }
+    </style>
 </head>
 <body>
     <div class="widget">
