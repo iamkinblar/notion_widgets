@@ -58,29 +58,13 @@
     -webkit-text-stroke: 0.2px #808080;
 }
 
-
-/* To center the image */
-#center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    max-width: 100%;
-    height: auto; 
-}
-
 /* The image and text */
 .widget {
-    position: relative;
     text-align: center;
 }
 
 /* The texts */
 .title {
-    position: absolute;
-    top: 14%;
-    left: 46.6%;
-    transform: translate(-50%, -50%);
     font-family: 'BuffaloFont', sans-serif;
     font-size: 40px;
     color: #ffffff;
@@ -88,22 +72,12 @@
 }
 
 .verse-text {
-    position: absolute;
-    top: 21%;
-    left: 46.5%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    max-height: 5%;
     font-family: 'CopperplateGothicBRFont', sans-serif;
     font-size: 24px;
     text-align: center;
 }
 
 .verse-reference {
-    position: absolute;
-    top: 55.5%;
-    left: 46.8%;
-    transform: translate(-50%, -50%);
     font-family: 'GagalinFont', sans-serif;
     font-size: larger;
     color: #ffffff;
@@ -117,9 +91,6 @@
     align-items: center;
     justify-content: center;
 /* positioning */
-    top: 73.6%;
-    left: 49.3%;
-    transform: translate(-50%, -50%);
 /* how to make the cirle shape */
     padding: 5px;
     width: 30px;
