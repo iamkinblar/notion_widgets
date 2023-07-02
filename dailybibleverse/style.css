@@ -76,15 +76,18 @@
 } */
 
 .verse-text {
-    
+    position: absolute;
+    top: 18%;
+    left: 25.5%;
     font-family: 'CopperplateGothicBRFont', sans-serif;
-    font-size: 2vw; /* Use viewport width unit to make the font size responsive */
+    font-size: 4vh; /* Use viewport width unit to make the font size responsive */
     text-align: center;
 }
 
 .verse-reference {
+    position: absolute;
     font-family: 'GagalinFont', sans-serif;
-    font-size: 1.5vw; /* Use viewport width unit to make the font size responsive */
+    font-size: 2vh; /* Use viewport width unit to make the font size responsive */
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -95,6 +98,7 @@
     align-items: center;
     justify-content: center;
 /* positioning */
+    position: absolute;
 /* how to make the cirle shape */
     padding: 5px;
     width: 30px;
