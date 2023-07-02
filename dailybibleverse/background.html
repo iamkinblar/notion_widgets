@@ -14,6 +14,11 @@
 
       const wordCount = verseText.split(" ").length;
       if (wordCount > 15) {
+        // Skip the verse and fetch another verse
+        getVerse();
+        return;
+      }
+      if (wordCount > 15) {
         // Reduce the font size of #verse when word count exceeds 15
         document.querySelector("#verse").style.fontSize = "2.5vh";
       } else {
